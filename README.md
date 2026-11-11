@@ -74,6 +74,7 @@ Sous Windows, `start_demo.ps1` fait la même chose.
 - **AgentCards** : `/.well-known/agent.json`.
 - **Protocole** : JSON-RPC 2.0 (`message/send`, `tasks/get`) + `correlation_id`.
 - **JSON final** : [`json/Agentic_AI_EdTech_J34_A2A_Final.json`](json/Agentic_AI_EdTech_J34_A2A_Final.json).
+- **Workflow Discovery seul** : [`json/Agentic_AI_EdTech_J34_A2A_Discovery.json`](json/Agentic_AI_EdTech_J34_A2A_Discovery.json) — récupère l'AgentCard sans déléguer.
 
 ### Dashboard
 
@@ -120,7 +121,7 @@ Volume synthétique : **14 cours**, **24 apprenants**, **30 questions**, **168 t
 | Présentation J33 | `presentation/J33_MCP_Presentation.pptx` / `.pdf` |
 | Présentation J34 | `presentation/J34_A2A_Presentation.pptx` / `.pdf` |
 | Présentation finale | `presentation/Presentation_Finale_J33_J34.pptx` / `.pdf` |
-| Workflows Langflow | `json/Agentic_AI_EdTech_J33_MCP_Final.json`, `json/Agentic_AI_EdTech_J34_A2A_Final.json` |
+| Workflows Langflow | `json/Agentic_AI_EdTech_J33_MCP_Final.json`, `json/Agentic_AI_EdTech_J34_A2A_Final.json`, `json/Agentic_AI_EdTech_J34_A2A_Discovery.json` |
 | AgentCards | `json/agent_cards/*.json`, `json/a2a_registry.json` |
 | Vidéo MCP | `videos/J33_MCP_Workflow_Playground.mp4` |
 | Vidéo A2A | `videos/J34_A2A_Workflow_Playground.mp4` |

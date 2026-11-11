@@ -1117,6 +1117,7 @@ def page_docs() -> None:
             [
                 ("Workflow MCP final (Langflow)", JSON_DIR / "Agentic_AI_EdTech_J33_MCP_Final.json", "JSON"),
                 ("Workflow A2A final (Langflow)", JSON_DIR / "Agentic_AI_EdTech_J34_A2A_Final.json", "JSON"),
+                ("Workflow A2A Discovery seul", JSON_DIR / "Agentic_AI_EdTech_J34_A2A_Discovery.json", "JSON"),
                 ("Registre des AgentCards", JSON_DIR / "a2a_registry.json", "JSON"),
             ],
         ),

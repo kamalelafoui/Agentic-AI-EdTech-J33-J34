@@ -19,6 +19,7 @@
 
 - [x] `json/Agentic_AI_EdTech_J33_MCP_Final.json`
 - [x] `json/Agentic_AI_EdTech_J34_A2A_Final.json`
+- [x] `json/Agentic_AI_EdTech_J34_A2A_Discovery.json` (Discovery seul)
 - [x] `json/a2a_registry.json`
 - [x] `json/agent_cards/*.json`
 

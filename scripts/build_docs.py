@@ -1002,14 +1002,6 @@ def doc_a2a(snapshot: dict, a2a_test: dict) -> Path:
         "json",
         font_size=7.4,
     )
-    callout(
-        doc,
-        "Pourquoi JSON-RPC ?",
-        "Le format est simple, transportable en HTTP et lisible dans les logs. Il permet de distinguer "
-        "clairement la requête, la réponse et l'erreur, tout en restant compatible avec le profil A2A.",
-        "info",
-    )
-
     h1(doc, "6. Orchestration et sélection")
     h2(doc, "6.1 Algorithme")
     bullets(
@@ -1044,7 +1036,46 @@ def doc_a2a(snapshot: dict, a2a_test: dict) -> Path:
         "un composant de découverte des AgentCards, un composant d'orchestration, un Chat Output et des notes "
         "d'architecture. L'orchestrateur appelle le service local http://127.0.0.1:8001/orchestrate.",
     )
+    h2(doc, "7.2 Workflow Discovery seul")
+    para(
+        doc,
+        "Le cours distingue deux phases : Discovery (découvrir l'agent et lire sa carte) et Delegation "
+        "(envoyer la tâche à l'agent). Le workflow principal réalise les deux. Un workflow séparé, "
+        "json/Agentic_AI_EdTech_J34_A2A_Discovery.json, isole la phase de découverte : Chat Input → "
+        "AgentCardDiscovery → Chat Output. Il ne délègue aucune tâche ; il récupère et affiche la carte.",
+    )
+    table(
+        doc,
+        ["Étape", "Action", "Résultat"],
+        [
+            ("1", "Chat Input reçoit la demande", "Message utilisateur"),
+            ("2", "GET /.well-known/agent.json", "JSON AgentCard"),
+            ("3", "Lecture des champs name, description, url, skills", "Données structurées"),
+            ("4", "Chat Output affiche la carte", "Identité + compétences + endpoint"),
+        ],
+        widths=[1.8, 8.0, 6.4],
+        caption="Tableau 8b · Phase Discovery, sans délégation.",
+    )
+    code_block(
+        doc,
+        """
+GET http://127.0.0.1:8101/.well-known/agent.json HTTP/1.1
+Accept: application/json
 
+200 OK
+{
+  "name": "Agent Tuteur",
+  "url": "http://127.0.0.1:8101/",
+  "protocolVersion": "0.3.0",
+  "skills": [
+    {"id": "search_courses", "name": "Recherche de cours"},
+    {"id": "recommend_learning_path", "name": "Parcours personnalisé"}
+  ]
+}
+        """,
+        "http",
+        font_size=7.7,
+    )
     h1(doc, "8. Démonstration et traces")
     if (SHOTS / "a2a_result2.png").exists():
         figure(doc, SHOTS / "a2a_result2.png", "Figure 3 · Dashboard A2A : AgentCards en ligne, formulaire et lancement de l'orchestration.", width_cm=16.8)
@@ -1084,7 +1115,6 @@ def doc_a2a(snapshot: dict, a2a_test: dict) -> Path:
             "Spécialisation et découplage : chaque agent reste concentré sur son domaine, sans connaître la logique interne des autres.",
             "Scalabilité dynamique : un nouvel agent rejoint l'écosystème en publiant simplement son AgentCard.",
             "Audit et diagnostic : le correlation_id et le log de délégation permettent d'isoler un échec et de mesurer la latence inter-agents.",
-            "Réutilisation : les mêmes agents peuvent servir plusieurs orchestrateurs et plusieurs parcours.",
         ],
     )
 

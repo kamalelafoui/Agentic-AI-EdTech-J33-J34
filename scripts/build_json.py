@@ -405,6 +405,228 @@ def build_a2a() -> Path:
     return path
 
 
+DISCOVERY_CODE = '''from lfx.custom.custom_component.component import Component
+from lfx.io import MessageInput, StrInput, Output
+from lfx.schema.message import Message
+
+import json
+import requests
+
+
+class AgentCardDiscovery(Component):
+    display_name = "Découverte AgentCard (A2A)"
+    description = (
+        "Récupère l'AgentCard d'un agent via HTTP GET, puis affiche son identité, "
+        "ses compétences et son endpoint. Aucune délégation n'est effectuée."
+    )
+    icon = "search"
+
+    inputs = [
+        MessageInput(name="question", display_name="Demande", info="Question ou tâche de l'utilisateur"),
+        StrInput(
+            name="agent_url",
+            display_name="URL de l'AgentCard",
+            value="http://127.0.0.1:8101/.well-known/agent.json",
+        ),
+    ]
+    outputs = [
+        Output(name="card", display_name="AgentCard", method="discover"),
+    ]
+
+    def discover(self) -> Message:
+        try:
+            response = requests.get(self.agent_url, timeout=10)
+            response.raise_for_status()
+            card = response.json()
+        except Exception as exc:
+            return Message(text=f"Impossible de récupérer l'AgentCard : {exc}")
+        skills = card.get("skills", [])
+        lines = [
+            "# AgentCard découverte",
+            "",
+            f"**Agent** : {card.get('name', 'inconnu')}",
+            f"**Description** : {card.get('description', '')}",
+            f"**Version** : {card.get('version', '')} · protocole {card.get('protocolVersion', '')}",
+            f"**Endpoint** : {card.get('url', '')}",
+            "",
+            "## Compétences",
+        ]
+        for skill in skills:
+            lines.append(
+                f"- **{skill.get('name', skill.get('id', ''))}** : {skill.get('description', '')} "
+                f"(tags : {', '.join(skill.get('tags', []))})"
+            )
+        lines.append("")
+        lines.append(
+            "> Phase Discovery uniquement : l'agent est découvert, mais la tâche n'est pas encore déléguée. "
+            "La délégation est réalisée par le workflow Orchestrateur A2A."
+        )
+        return Message(text="\\n".join(lines))
+'''
+
+
+def build_discovery() -> Path:
+    base = json.loads(SOURCE_MCP.read_text(encoding="utf-8"))
+    chat_input = None
+    chat_output = None
+    for node in base["data"]["nodes"]:
+        if node["data"]["type"] == "ChatInput" and chat_input is None:
+            chat_input = json.loads(json.dumps(node))
+            chat_input["data"]["id"] = "ChatInput-Discovery"
+            chat_input["id"] = "ChatInput-Discovery"
+            chat_input["data"]["node"]["template"]["input_value"]["value"] = (
+                "Découvre l'agent Tuteur et présente ses compétences."
+            )
+        if node["data"]["type"] == "ChatOutput" and chat_output is None:
+            chat_output = json.loads(json.dumps(node))
+            chat_output["data"]["id"] = "ChatOutput-Discovery"
+            chat_output["id"] = "ChatOutput-Discovery"
+
+    template = {
+        "_type": "Component",
+        "question": _input_field("question", "MessageInput", "Demande", "", ["Message"]),
+        "agent_url": _input_field(
+            "agent_url",
+            "StrInput",
+            "URL de l'AgentCard",
+            "http://127.0.0.1:8101/.well-known/agent.json",
+        ),
+        "code": _code_field(DISCOVERY_CODE),
+    }
+    component = {
+        "data": {
+            "id": "AgentCardDiscovery-01",
+            "node": {
+                "base_classes": ["Message"],
+                "beta": False,
+                "conditional_paths": [],
+                "custom_fields": {},
+                "description": (
+                    "Récupère une AgentCard en HTTP GET et affiche identité, compétences et endpoint. "
+                    "Phase Discovery uniquement, sans délégation."
+                ),
+                "display_name": "Découverte AgentCard · A2A Discovery",
+                "documentation": "",
+                "edited": True,
+                "field_order": ["question", "agent_url"],
+                "frozen": False,
+                "icon": "search",
+                "legacy": False,
+                "lf_version": "1.7.0",
+                "metadata": {
+                    "code_hash": uuid.uuid5(uuid.NAMESPACE_URL, "edumcp-a2a-discovery").hex[:12],
+                    "dependencies": {
+                        "dependencies": [
+                            {"name": "lfx", "version": "0.2.1"},
+                            {"name": "requests", "version": None},
+                        ],
+                        "total_dependencies": 2,
+                    },
+                    "module": "custom_components.decouverte_agentcard_a2a",
+                },
+                "minimized": False,
+                "output_types": [],
+                "outputs": [
+                    {
+                        "allows_loop": False,
+                        "cache": True,
+                        "display_name": "AgentCard",
+                        "group_outputs": False,
+                        "method": "discover",
+                        "name": "card",
+                        "selected": "Message",
+                        "tool_mode": False,
+                        "types": ["Message"],
+                        "value": "__UNDEFINED__",
+                    }
+                ],
+                "pinned": False,
+                "template": template,
+            },
+            "type": "CustomComponent",
+        },
+        "id": "AgentCardDiscovery-01",
+        "position": {"x": 420, "y": 220},
+        "type": "CustomComponent",
+    }
+    note = {
+        "data": {
+            "id": "note-Discovery-J34",
+            "node": {
+                "description": (
+                    "# A2A · Discovery uniquement\n\n"
+                    "Ce workflow montre la **phase de découverte** :\n\n"
+                    "1. Chat Input reçoit la demande.\n"
+                    "2. Le composant `AgentCardDiscovery` appelle `GET /.well-known/agent.json`.\n"
+                    "3. Il affiche le nom, la description, les compétences et l'endpoint.\n"
+                    "4. Chat Output restitue la carte.\n\n"
+                    "**Aucune délégation** n'est effectuée ici. La tâche n'est pas envoyée à l'agent. "
+                    "Pour la phase suivante, utiliser `Agentic_AI_EdTech_J34_A2A_Final.json` "
+                    "(orchestrateur + `message/send`).\n\n"
+                    "Cette séparation Discovery / Delegation est essentielle pour construire des systèmes "
+                    "multi-agents modulaires, extensibles et faiblement couplés."
+                ),
+                "display_name": "",
+                "documentation": "",
+                "template": {},
+            },
+            "type": "note",
+        },
+        "id": "note-Discovery-J34",
+        "position": {"x": -60, "y": -250},
+        "type": "note",
+    }
+
+    def edge(source, source_name, source_type, target, target_field, target_types, target_type="str"):
+        source_handle = {
+            "dataType": source_type,
+            "id": source,
+            "name": source_name,
+            "output_types": ["Message"] if source_type == "ChatInput" else [source_type],
+        }
+        target_handle = {"fieldName": target_field, "id": target, "inputTypes": target_types, "type": target_type}
+        return {
+            "animated": False,
+            "className": "",
+            "data": {"sourceHandle": source_handle, "targetHandle": target_handle},
+            "id": f"xy-edge__{source}-{target}-{target_field}",
+            "selected": False,
+            "source": source,
+            "sourceHandle": json.dumps(source_handle, ensure_ascii=False),
+            "target": target,
+            "targetHandle": json.dumps(target_handle, ensure_ascii=False),
+        }
+
+    edges = [
+        edge("ChatInput-Discovery", "message", "ChatInput", "AgentCardDiscovery-01", "question", ["Message"], "str"),
+        edge(
+            "AgentCardDiscovery-01",
+            "card",
+            "CustomComponent",
+            "ChatOutput-Discovery",
+            "input_value",
+            ["Data", "DataFrame", "Message"],
+            "other",
+        ),
+    ]
+    payload = {
+        "data": {"edges": edges, "nodes": [chat_input, component, chat_output, note], "viewport": {"x": 0, "y": 0, "zoom": 0.55}},
+        "description": (
+            "A2A Discovery : récupération d'une AgentCard via HTTP GET, affichage des compétences et de "
+            "l'endpoint, sans délégation."
+        ),
+        "endpoint_name": None,
+        "id": str(uuid.uuid5(uuid.NAMESPACE_URL, "edumcp-a2a-discovery-flow")),
+        "is_component": False,
+        "last_tested_version": "1.7.0",
+        "name": "Agentic_AI_EdTech_J34_A2A_Discovery",
+        "tags": ["edtech", "a2a", "discovery", "agentcard", "j34", "langflow"],
+    }
+    path = JSON_DIR / "Agentic_AI_EdTech_J34_A2A_Discovery.json"
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    return path
+
+
 def build_registry() -> Path:
     cards = a2a_core.save_agent_cards()
     for src in cards:
@@ -433,7 +655,7 @@ def build_registry() -> Path:
 
 
 def main() -> None:
-    paths = [build_mcp(), build_a2a(), build_registry()]
+    paths = [build_mcp(), build_a2a(), build_discovery(), build_registry()]
     for path in paths:
         print(f"  {path.name}: {path.stat().st_size/1024:.0f} Ko")
 
