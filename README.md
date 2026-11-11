@@ -4,6 +4,8 @@
 
 **Mini-projets Jours 33 & 34 — MCP et A2A — correction finale**
 
+[![GitHub](https://img.shields.io/badge/GitHub-kamalelafoui%2FAgentic--AI--EdTech--J33--J34-0B2340?logo=github)](https://github.com/kamalelafoui/Agentic-AI-EdTech-J33-J34)
+
 Un serveur **MCP** qui expose six outils EdTech, un système multi-agents **A2A** qui découvre et délègue, et un dashboard **Streamlit** sur `localhost:8011` pour tout observer.
 
 | | |

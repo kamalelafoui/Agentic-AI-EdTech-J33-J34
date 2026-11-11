@@ -11,5 +11,6 @@
   "a2a_orchestrator_port": 8001,
   "mcp_url": "http://127.0.0.1:8000/sse",
   "a2a_url": "http://127.0.0.1:8001",
+  "github": "https://github.com/kamalelafoui/Agentic-AI-EdTech-J33-J34",
   "license": "MIT — données synthétiques"
 }

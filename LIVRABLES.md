@@ -42,8 +42,8 @@
 
 ## Packaging et publication
 
-- [ ] Dépôt GitHub (voir `GITHUB.md`)
-- [ ] Archive `Agentic_AI_EdTech_J33_J34_FINAL.zip`
+- [x] Dépôt GitHub : https://github.com/kamalelafoui/Agentic-AI-EdTech-J33-J34
+- [x] Archive `Agentic_AI_EdTech_J33_J34_FINAL.zip`
 
 ## Vérifications finales
 

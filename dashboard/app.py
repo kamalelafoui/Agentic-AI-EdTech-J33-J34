@@ -1084,6 +1084,11 @@ def page_docs() -> None:
         "Téléchargez-les directement depuis le dashboard.",
         [("DOCX / PDF", "gold"), ("PPTX", ""), ("MP4", "teal"), ("GitHub", "")],
     )
+    st.link_button(
+        "🐙  Ouvrir le dépôt GitHub",
+        "https://github.com/kamalelafoui/Agentic-AI-EdTech-J33-J34",
+        use_container_width=False,
+    )
     groups = [
         (
             "📄 Documentation",

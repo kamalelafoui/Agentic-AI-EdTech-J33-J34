@@ -6,6 +6,7 @@ Auteur       : Kamal El Afoui
 Programme    : Centre des Très Petites Entreprises Solidaires · DBA Technology
 Date         : 11 novembre 2026
 Version      : 1.0.0
+GitHub       : https://github.com/kamalelafoui/Agentic-AI-EdTech-J33-J34
 
 CONTENU
 -------

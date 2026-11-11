@@ -1,5 +1,7 @@
 # Publication GitHub
 
+Dépôt publié : **https://github.com/kamalelafoui/Agentic-AI-EdTech-J33-J34**
+
 Le dépôt local est prêt. L'URI MongoDB est dans `.env` et **ne doit jamais être poussée**.
 
 ## 1. Vérifier que `.env` est ignoré
@@ -17,7 +19,7 @@ git init
 git add .
 git commit -m "EduAgentic J33/J34 — MCP & A2A, correction finale"
 git branch -M main
-git remote add origin https://github.com/<compte>/Agentic-AI-EdTech-J33-J34.git
+git remote add origin https://github.com/kamalelafoui/Agentic-AI-EdTech-J33-J34.git
 git push -u origin main
 ```
 
