@@ -651,19 +651,20 @@ def add_j34() -> Path:
         0.65,
         1.9,
         12.05,
-        2.2,
-        ["Heure", "Source → cible", "Statut", "Latence"],
+        2.45,
+        ["Heure", "Échange inter-agents", "Correlation ID", "Statut"],
         [
-            ("12:00:01", "orchestrateur → agent-orientation", "completed", "23 ms"),
-            ("12:00:01", "orchestrateur → agent-tuteur", "completed", "27 ms"),
-            ("12:00:01", "orchestrateur → agent-evaluation", "completed", "26 ms"),
+            ("09:15:01", "Orchestrateur → Agent Orientation", "A2A-7F3B21", "Envoyé"),
+            ("09:15:02", "Orchestrateur → Agent Tuteur", "A2A-7F3B21", "Envoyé"),
+            ("09:15:03", "Orchestrateur → Agent Évaluation", "A2A-7F3B21", "Envoyé"),
+            ("09:15:05", "Orchestrateur → Agrégation", "A2A-7F3B21", "Réponse envoyée"),
         ],
-        [2.4, 6.4, 1.6, 1.65],
-        10.5,
+        [1.25, 5.2, 2.7, 2.9],
+        9.3,
     )
-    rect(s, 0.65, 4.4, 12.05, 1.6, RGBColor(0xFF, 0xF8, 0xE1), radius=0.06, shape=MSO_SHAPE.ROUNDED_RECTANGLE)
-    txt(s, 0.95, 4.6, 11.4, 0.35, "A2A-261111-120000-AB12", 20, NAVY, True)
-    txt(s, 0.95, 5.05, 11.4, 0.7, "Sans correlation_id, il est impossible de relier plusieurs échanges appartenant à la même tâche.",
+    rect(s, 0.65, 4.8, 12.05, 1.5, RGBColor(0xFF, 0xF8, 0xE1), radius=0.06, shape=MSO_SHAPE.ROUNDED_RECTANGLE)
+    txt(s, 0.95, 4.98, 11.4, 0.35, "A2A-7F3B21", 20, NAVY, True)
+    txt(s, 0.95, 5.42, 11.4, 0.7, "Sans correlation_id, il est impossible de relier plusieurs échanges appartenant à la même tâche.",
         11, MUTED)
     footer(s, 9, total)
     notes(

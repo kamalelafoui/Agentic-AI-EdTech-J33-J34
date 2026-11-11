@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """Génère les documentations DOCX puis les exporte en PDF via Microsoft Word."""
 from __future__ import annotations
 
@@ -159,11 +159,6 @@ def add_toc(doc):
     from docx_helpers import add_toc as insert_toc
 
     insert_toc(p)
-    p = doc.add_paragraph()
-    r = p.add_run("Le sommaire est mis à jour automatiquement à l'ouverture du document dans Word.")
-    r.font.size = 8
-    r.font.italic = True
-    r.font.color.rgb = GOLD
 
 
 def doc_mcp(snapshot: dict, mcp_test: dict, a2a_test: dict) -> Path:
@@ -800,7 +795,7 @@ def doc_a2a(snapshot: dict, a2a_test: dict) -> Path:
     )
     add_toc(doc)
 
-    h1(doc, "1. Contexte et problématique", page_break=False)
+    h1(doc, "1. Contexte et problématique", page_break=True)
     h2(doc, "1.1 Pourquoi un protocole A2A ?")
     para(
         doc,
@@ -1056,14 +1051,15 @@ def doc_a2a(snapshot: dict, a2a_test: dict) -> Path:
     h2(doc, "8.1 Exemple de trace")
     table(
         doc,
-        ["Heure", "Source → cible", "Statut", "Latence"],
+        ["Horodatage", "Correlation ID", "Échange inter-agents", "Statut"],
         [
-            ("12:00:01", "orchestrateur → agent-orientation", "completed", "23 ms"),
-            ("12:00:01", "orchestrateur → agent-tuteur", "completed", "27 ms"),
-            ("12:00:01", "orchestrateur → agent-evaluation", "completed", "26 ms"),
+            ("09:15:01", "A2A-7F3B21", "Orchestrateur → Agent Orientation (diagnostic)", "Envoyé"),
+            ("09:15:02", "A2A-7F3B21", "Orchestrateur → Agent Tuteur (ressources)", "Envoyé"),
+            ("09:15:03", "A2A-7F3B21", "Orchestrateur → Agent Évaluation (quiz)", "Envoyé"),
+            ("09:15:05", "A2A-7F3B21", "Orchestrateur → Agrégation (réponse finale)", "Réponse envoyée"),
         ],
-        widths=[3.0, 8.5, 3.0, 2.0],
-        caption="Tableau 8 · Délégations parallèles d'une demande (exemple).",
+        widths=[2.6, 3.2, 9.0, 2.7],
+        caption="Tableau 8 · Log de délégation : un même correlation_id relie tous les échanges.",
     )
     para(
         doc,
@@ -1079,6 +1075,16 @@ def doc_a2a(snapshot: dict, a2a_test: dict) -> Path:
             "Identifier rapidement l'agent qui a échoué ou ralenti.",
             "Comparer les performances entre agents et entre exécutions.",
             "Relier les logs aux artifacts et à la réponse finale.",
+        ],
+    )
+    h2(doc, "8.3 Bénéfices pour l'architecture multi-agents")
+    bullets(
+        doc,
+        [
+            "Spécialisation et découplage : chaque agent reste concentré sur son domaine, sans connaître la logique interne des autres.",
+            "Scalabilité dynamique : un nouvel agent rejoint l'écosystème en publiant simplement son AgentCard.",
+            "Audit et diagnostic : le correlation_id et le log de délégation permettent d'isoler un échec et de mesurer la latence inter-agents.",
+            "Réutilisation : les mêmes agents peuvent servir plusieurs orchestrateurs et plusieurs parcours.",
         ],
     )
 
@@ -1507,3 +1513,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
