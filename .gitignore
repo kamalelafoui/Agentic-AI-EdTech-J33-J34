@@ -1,0 +1,17 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.vscode/
+.idea/
+.streamlit/secrets.toml
+*.log
+a2a/logs/
+screenshots/_*
+videos/_*
+data/a2a_live.jsonl
+data/benchmarks.json
+*.zip

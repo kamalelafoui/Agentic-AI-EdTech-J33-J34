@@ -1,0 +1,77 @@
+{
+  "protocolVersion": "0.3.0",
+  "preferredTransport": "JSONRPC",
+  "additionalInterfaces": [
+    {
+      "url": "http://127.0.0.1:8101/",
+      "transport": "JSONRPC"
+    }
+  ],
+  "provider": {
+    "organization": "EduAgentic · Centre des Très Petites Entreprises Solidaires / DBA Technology",
+    "url": "http://localhost:8011"
+  },
+  "version": "1.0.0",
+  "documentationUrl": "http://localhost:8011",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": true
+  },
+  "defaultInputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "url": "http://127.0.0.1:8101/",
+  "iconUrl": "http://localhost:8011/assets/logo.png",
+  "name": "Agent Tuteur",
+  "description": "Recherche des ressources, vérifie les prérequis et recommande un parcours personnalisé.",
+  "skills": [
+    {
+      "id": "search_courses",
+      "name": "Recherche de cours",
+      "description": "Trouve les cours et ressources adaptés à un objectif, un niveau ou une compétence.",
+      "tags": [
+        "cours",
+        "ressources",
+        "catalogue",
+        "recherche"
+      ],
+      "examples": [
+        "Quels cours pour apprendre pandas ?",
+        "Ressources niveau intermédiaire en SQL"
+      ],
+      "inputModes": [
+        "text/plain",
+        "application/json"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "recommend_learning_path",
+      "name": "Parcours personnalisé",
+      "description": "Ordonne les cours et prérequis jusqu'à la compétence visée.",
+      "tags": [
+        "parcours",
+        "prérequis",
+        "tutorat",
+        "compétences"
+      ],
+      "examples": [
+        "Construis mon parcours Data Analyst"
+      ],
+      "inputModes": [
+        "application/json"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+[server]
+port = 8011
+headless = true
+runOnSave = true
+
+[theme]
+primaryColor = "#F4B400"
+backgroundColor = "#F5F8FC"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#12263F"
+font = "sans serif"
+
+[browser]
+gatherUsageStats = false

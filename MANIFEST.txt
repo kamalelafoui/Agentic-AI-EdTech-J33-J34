@@ -1,0 +1,40 @@
+EduAgentic — Agentic AI in Education Technology
+Mini-projets Jours 33 & 34 — MCP et A2A — correction finale
+================================================================
+
+Auteur       : Kamal El Afoui
+Programme    : Centre des Très Petites Entreprises Solidaires · DBA Technology
+Date         : 11 novembre 2026
+Version      : 1.0.0
+
+CONTENU
+-------
+- mcp_server/        Serveur MCP FastMCP (6 outils EdTech, SSE, port 8000)
+- a2a/               Orchestrateur + 3 agents A2A (ports 8001, 8101-8103)
+- dashboard/         Dashboard Streamlit (port 8011)
+- shared/            Moteur métier + backend MongoDB Atlas optionnel
+- data/              Données synthétiques (14 cours, 24 apprenants, 168 quiz)
+- json/              Workflows Langflow MCP/A2A + AgentCards
+- docs/              Documentation DOCX + PDF (J33, J34, globale)
+- presentation/      Présentations PPTX + PDF (J33, J34, finale)
+- videos/            3 vidéos MP4 (MCP, A2A, finale)
+- scripts/           Génération des données, docs, decks, JSON et vidéos
+- screenshots/       Captures du dashboard utilisées dans les livrables
+
+DÉMARRAGE
+---------
+python -m pip install -r requirements.txt
+python a2a/run_all.py --with-dashboard
+Dashboard : http://localhost:8011
+
+SÉCURITÉ
+--------
+Le fichier .env (URI MongoDB) est exclu de cette archive et ignoré par Git.
+Ne jamais publier .env, logs ou captures contenant des identifiants.
+Les données sont 100 % synthétiques.
+
+TESTS
+-----
+MCP  : 6/6 outils, handshake SSE OK
+A2A  : 3/3 agents, 3 délégations completed
+UI   : 6 pages, 0 exception

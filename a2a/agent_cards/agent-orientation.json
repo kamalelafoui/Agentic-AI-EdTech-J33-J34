@@ -1,0 +1,75 @@
+{
+  "protocolVersion": "0.3.0",
+  "preferredTransport": "JSONRPC",
+  "additionalInterfaces": [
+    {
+      "url": "http://127.0.0.1:8103/",
+      "transport": "JSONRPC"
+    }
+  ],
+  "provider": {
+    "organization": "EduAgentic · Centre des Très Petites Entreprises Solidaires / DBA Technology",
+    "url": "http://localhost:8011"
+  },
+  "version": "1.0.0",
+  "documentationUrl": "http://localhost:8011",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": true
+  },
+  "defaultInputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "url": "http://127.0.0.1:8103/",
+  "iconUrl": "http://localhost:8011/assets/logo.png",
+  "name": "Agent Orientation",
+  "description": "Analyse l'écart de compétences et propose une trajectoire métier réaliste.",
+  "skills": [
+    {
+      "id": "skill_gap",
+      "name": "Analyse de l'écart de compétences",
+      "description": "Compare les compétences acquises aux compétences attendues pour l'objectif.",
+      "tags": [
+        "compétences",
+        "gap",
+        "diagnostic"
+      ],
+      "examples": [
+        "Quelles compétences me manquent pour être Data Analyst ?"
+      ],
+      "inputModes": [
+        "application/json"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "career_path",
+      "name": "Trajectoire métier",
+      "description": "Décrit les missions, le marché et les prochaines étapes du métier visé.",
+      "tags": [
+        "orientation",
+        "métier",
+        "carrière",
+        "parcours"
+      ],
+      "examples": [
+        "Comment devenir Data Scientist ?"
+      ],
+      "inputModes": [
+        "text/plain",
+        "application/json"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    }
+  ]
+}

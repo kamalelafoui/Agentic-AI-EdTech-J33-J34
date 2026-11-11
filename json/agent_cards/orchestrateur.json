@@ -1,0 +1,56 @@
+{
+  "protocolVersion": "0.3.0",
+  "preferredTransport": "JSONRPC",
+  "additionalInterfaces": [
+    {
+      "url": "http://127.0.0.1:8001/",
+      "transport": "JSONRPC"
+    }
+  ],
+  "provider": {
+    "organization": "EduAgentic · Centre des Très Petites Entreprises Solidaires / DBA Technology",
+    "url": "http://localhost:8011"
+  },
+  "version": "1.0.0",
+  "documentationUrl": "http://localhost:8011",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": true
+  },
+  "defaultInputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "url": "http://127.0.0.1:8001/",
+  "iconUrl": "http://localhost:8011/assets/logo.png",
+  "name": "Orchestrateur A2A",
+  "description": "Découvre les agents disponibles, sélectionne les spécialistes et délègue les tâches avec un correlation_id.",
+  "skills": [
+    {
+      "id": "orchestrate_learning_request",
+      "name": "Orchestration de demande d'apprentissage",
+      "description": "Décompose une demande, découvre les AgentCards et consolide les réponses.",
+      "tags": [
+        "orchestration",
+        "délégation",
+        "découverte",
+        "A2A"
+      ],
+      "examples": [
+        "Je veux devenir Data Analyst : parcours, cours et quiz"
+      ],
+      "inputModes": [
+        "text/plain",
+        "application/json"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    }
+  ]
+}

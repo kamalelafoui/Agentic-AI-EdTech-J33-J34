@@ -1,0 +1,85 @@
+﻿correlation_id,timestamp,source,target,skill,task,status,latency_ms,learner_id
+A2A-261012-0078,2026-10-12 09:23:00,orchestrateur,agent-tuteur,recommend_path,Recommandation de parcours,failed,1818,L008
+A2A-261012-0079,2026-10-12 14:24:00,orchestrateur,agent-evaluation,generate_quiz,Génération d'un quiz,completed,214,L005
+A2A-261012-0033,2026-10-12 22:52:00,orchestrateur,agent-orientation,career_path,Orientation métier,completed,231,L004
+A2A-261012-0037,2026-10-12 23:42:00,orchestrateur,agent-evaluation,grade_quiz,Correction d'un quiz,completed,246,L011
+A2A-261013-0067,2026-10-13 06:01:00,orchestrateur,agent-tuteur,recommend_path,Recommandation de parcours,completed,195,L016
+A2A-261013-0038,2026-10-13 08:19:00,orchestrateur,agent-evaluation,grade_quiz,Correction d'un quiz,completed,642,L020
+A2A-261013-0017,2026-10-13 09:11:00,orchestrateur,agent-tuteur,search_courses,Recherche de ressources,completed,540,L020
+A2A-261013-0019,2026-10-13 13:03:00,orchestrateur,agent-tuteur,recommend_path,Recommandation de parcours,completed,645,L005
+A2A-261013-0053,2026-10-13 15:24:00,orchestrateur,agent-tuteur,search_courses,Recherche de ressources,failed,1512,L022
+A2A-261013-0070,2026-10-13 19:14:00,orchestrateur,agent-orientation,career_path,Orientation métier,completed,643,L012
+A2A-261013-0014,2026-10-13 19:46:00,orchestrateur,agent-tuteur,recommend_path,Recommandation de parcours,completed,709,L020
+A2A-261014-0027,2026-10-14 06:26:00,orchestrateur,agent-orientation,skill_gap,Analyse des compétences,completed,685,L004
+A2A-261014-0015,2026-10-14 19:22:00,orchestrateur,agent-orientation,career_path,Orientation métier,completed,444,L001
+A2A-261015-0008,2026-10-15 00:57:00,orchestrateur,agent-tuteur,recommend_path,Recommandation de parcours,completed,479,L021
+A2A-261015-0066,2026-10-15 04:10:00,orchestrateur,agent-tuteur,recommend_path,Recommandation de parcours,completed,542,L023
+A2A-261015-0016,2026-10-15 07:01:00,orchestrateur,agent-tuteur,recommend_path,Recommandation de parcours,completed,734,L012
+A2A-261016-0076,2026-10-16 00:43:00,orchestrateur,agent-evaluation,generate_quiz,Génération d'un quiz,completed,306,L019
+A2A-261016-0021,2026-10-16 23:27:00,orchestrateur,agent-tuteur,search_courses,Recherche de ressources,completed,238,L019
+A2A-261017-0020,2026-10-17 11:13:00,orchestrateur,agent-orientation,skill_gap,Analyse des compétences,completed,772,L011
+A2A-261017-0024,2026-10-17 14:13:00,orchestrateur,agent-orientation,career_path,Orientation métier,completed,401,L007
+A2A-261017-0050,2026-10-17 22:07:00,orchestrateur,agent-evaluation,generate_quiz,Génération d'un quiz,completed,655,L020
+A2A-261018-0073,2026-10-18 12:05:00,orchestrateur,agent-evaluation,grade_quiz,Correction d'un quiz,completed,610,L015
+A2A-261018-0082,2026-10-18 15:44:00,orchestrateur,agent-evaluation,grade_quiz,Correction d'un quiz,timeout,953,L010
+A2A-261018-0032,2026-10-18 19:57:00,orchestrateur,agent-orientation,career_path,Orientation métier,completed,690,L002
+A2A-261018-0004,2026-10-18 21:09:00,orchestrateur,agent-tuteur,search_courses,Recherche de ressources,completed,645,L019
+A2A-261019-0018,2026-10-19 05:58:00,orchestrateur,agent-tuteur,search_courses,Recherche de ressources,failed,1042,L009
+A2A-261020-0069,2026-10-20 15:33:00,orchestrateur,agent-orientation,skill_gap,Analyse des compétences,completed,569,L016
+A2A-261020-0040,2026-10-20 17:42:00,orchestrateur,agent-tuteur,search_courses,Recherche de ressources,completed,295,L021
+A2A-261021-0043,2026-10-21 08:08:00,orchestrateur,agent-tuteur,search_courses,Recherche de ressources,completed,353,L017
+A2A-261021-0068,2026-10-21 11:38:00,orchestrateur,agent-orientation,career_path,Orientation métier,completed,555,L014
+A2A-261021-0011,2026-10-21 14:05:00,orchestrateur,agent-orientation,career_path,Orientation métier,completed,530,L023
+A2A-261021-0048,2026-10-21 23:57:00,orchestrateur,agent-evaluation,generate_quiz,Génération d'un quiz,completed,453,L015
+A2A-261022-0006,2026-10-22 11:19:00,orchestrateur,agent-evaluation,generate_quiz,Génération d'un quiz,completed,337,L018
+A2A-261022-0030,2026-10-22 19:31:00,orchestrateur,agent-tuteur,search_courses,Recherche de ressources,completed,638,L004
+A2A-261023-0063,2026-10-23 00:20:00,orchestrateur,agent-evaluation,grade_quiz,Correction d'un quiz,completed,416,L004
+A2A-261024-0044,2026-10-24 01:47:00,orchestrateur,agent-tuteur,recommend_path,Recommandation de parcours,completed,602,L014
+A2A-261024-0022,2026-10-24 09:08:00,orchestrateur,agent-orientation,career_path,Orientation métier,completed,494,L009
+A2A-261024-0007,2026-10-24 12:52:00,orchestrateur,agent-tuteur,recommend_path,Recommandation de parcours,completed,497,L022
+A2A-261024-0065,2026-10-24 12:53:00,orchestrateur,agent-evaluation,grade_quiz,Correction d'un quiz,completed,586,L013
+A2A-261024-0081,2026-10-24 14:58:00,orchestrateur,agent-evaluation,grade_quiz,Correction d'un quiz,completed,271,L007
+A2A-261025-0052,2026-10-25 11:22:00,orchestrateur,agent-evaluation,grade_quiz,Correction d'un quiz,completed,590,L020
+A2A-261025-0045,2026-10-25 23:10:00,orchestrateur,agent-evaluation,grade_quiz,Correction d'un quiz,completed,587,L003
+A2A-261026-0047,2026-10-26 13:02:00,orchestrateur,agent-tuteur,recommend_path,Recommandation de parcours,timeout,2399,L001
+A2A-261026-0061,2026-10-26 23:51:00,orchestrateur,agent-evaluation,grade_quiz,Correction d'un quiz,completed,642,L007
+A2A-261027-0012,2026-10-27 01:03:00,orchestrateur,agent-evaluation,generate_quiz,Génération d'un quiz,completed,598,L004
+A2A-261028-0084,2026-10-28 07:10:00,orchestrateur,agent-tuteur,search_courses,Recherche de ressources,completed,567,L003
+A2A-261028-0026,2026-10-28 11:57:00,orchestrateur,agent-tuteur,recommend_path,Recommandation de parcours,completed,469,L010
+A2A-261028-0080,2026-10-28 21:20:00,orchestrateur,agent-evaluation,generate_quiz,Génération d'un quiz,completed,290,L011
+A2A-261029-0060,2026-10-29 01:42:00,orchestrateur,agent-orientation,career_path,Orientation métier,completed,660,L009
+A2A-261029-0057,2026-10-29 21:10:00,orchestrateur,agent-orientation,career_path,Orientation métier,completed,331,L007
+A2A-261030-0071,2026-10-30 11:40:00,orchestrateur,agent-evaluation,grade_quiz,Correction d'un quiz,completed,272,L023
+A2A-261031-0072,2026-10-31 01:06:00,orchestrateur,agent-tuteur,search_courses,Recherche de ressources,completed,685,L007
+A2A-261031-0077,2026-10-31 19:50:00,orchestrateur,agent-tuteur,recommend_path,Recommandation de parcours,completed,204,L011
+A2A-261031-0046,2026-10-31 22:51:00,orchestrateur,agent-evaluation,generate_quiz,Génération d'un quiz,completed,590,L016
+A2A-261101-0074,2026-11-01 10:57:00,orchestrateur,agent-orientation,career_path,Orientation métier,completed,690,L005
+A2A-261101-0035,2026-11-01 12:59:00,orchestrateur,agent-evaluation,generate_quiz,Génération d'un quiz,completed,508,L017
+A2A-261102-0028,2026-11-02 06:18:00,orchestrateur,agent-evaluation,generate_quiz,Génération d'un quiz,completed,209,L008
+A2A-261102-0075,2026-11-02 17:55:00,orchestrateur,agent-evaluation,generate_quiz,Génération d'un quiz,completed,387,L012
+A2A-261102-0056,2026-11-02 21:24:00,orchestrateur,agent-tuteur,search_courses,Recherche de ressources,completed,506,L012
+A2A-261103-0055,2026-11-03 00:59:00,orchestrateur,agent-orientation,skill_gap,Analyse des compétences,completed,617,L011
+A2A-261103-0010,2026-11-03 01:07:00,orchestrateur,agent-tuteur,recommend_path,Recommandation de parcours,completed,528,L009
+A2A-261103-0003,2026-11-03 03:09:00,orchestrateur,agent-tuteur,search_courses,Recherche de ressources,completed,256,L009
+A2A-261103-0005,2026-11-03 04:03:00,orchestrateur,agent-tuteur,recommend_path,Recommandation de parcours,completed,549,L012
+A2A-261103-0039,2026-11-03 07:00:00,orchestrateur,agent-evaluation,generate_quiz,Génération d'un quiz,completed,711,L005
+A2A-261103-0025,2026-11-03 15:14:00,orchestrateur,agent-tuteur,recommend_path,Recommandation de parcours,completed,415,L012
+A2A-261104-0041,2026-11-04 07:19:00,orchestrateur,agent-orientation,career_path,Orientation métier,completed,413,L003
+A2A-261105-0001,2026-11-05 04:51:00,orchestrateur,agent-evaluation,grade_quiz,Correction d'un quiz,completed,492,L013
+A2A-261105-0058,2026-11-05 10:25:00,orchestrateur,agent-orientation,career_path,Orientation métier,completed,602,L019
+A2A-261105-0059,2026-11-05 18:48:00,orchestrateur,agent-evaluation,grade_quiz,Correction d'un quiz,completed,474,L021
+A2A-261105-0002,2026-11-05 22:31:00,orchestrateur,agent-orientation,skill_gap,Analyse des compétences,completed,534,L016
+A2A-261106-0042,2026-11-06 09:46:00,orchestrateur,agent-tuteur,search_courses,Recherche de ressources,completed,300,L010
+A2A-261106-0064,2026-11-06 16:25:00,orchestrateur,agent-evaluation,grade_quiz,Correction d'un quiz,completed,612,L010
+A2A-261106-0029,2026-11-06 20:14:00,orchestrateur,agent-tuteur,search_courses,Recherche de ressources,completed,423,L012
+A2A-261107-0031,2026-11-07 03:31:00,orchestrateur,agent-evaluation,grade_quiz,Correction d'un quiz,timeout,2342,L018
+A2A-261107-0009,2026-11-07 13:55:00,orchestrateur,agent-evaluation,generate_quiz,Génération d'un quiz,completed,306,L010
+A2A-261107-0062,2026-11-07 17:52:00,orchestrateur,agent-orientation,career_path,Orientation métier,completed,754,L008
+A2A-261108-0013,2026-11-08 03:21:00,orchestrateur,agent-orientation,skill_gap,Analyse des compétences,completed,409,L010
+A2A-261108-0034,2026-11-08 07:20:00,orchestrateur,agent-evaluation,grade_quiz,Correction d'un quiz,completed,558,L023
+A2A-261108-0083,2026-11-08 10:47:00,orchestrateur,agent-evaluation,grade_quiz,Correction d'un quiz,completed,531,L017
+A2A-261108-0049,2026-11-08 11:52:00,orchestrateur,agent-tuteur,search_courses,Recherche de ressources,completed,777,L021
+A2A-261108-0036,2026-11-08 22:08:00,orchestrateur,agent-evaluation,generate_quiz,Génération d'un quiz,completed,313,L008
+A2A-261109-0054,2026-11-09 18:03:00,orchestrateur,agent-orientation,skill_gap,Analyse des compétences,completed,347,L015
+A2A-261109-0023,2026-11-09 19:39:00,orchestrateur,agent-tuteur,search_courses,Recherche de ressources,completed,656,L017
+A2A-261109-0051,2026-11-09 22:10:00,orchestrateur,agent-tuteur,search_courses,Recherche de ressources,completed,264,L021

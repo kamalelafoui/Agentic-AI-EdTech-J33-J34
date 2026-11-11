@@ -1,0 +1,422 @@
+[
+  {
+    "id": "PY101-Q1",
+    "course_id": "PY101",
+    "question": "Quel objet pandas permet de manipuler un tableau de données en deux dimensions ?",
+    "choices": [
+      "Une liste",
+      "Un DataFrame",
+      "Un dictionnaire",
+      "Un tuple"
+    ],
+    "answer_index": 1,
+    "explanation": "Le DataFrame est la structure tabulaire de pandas.",
+    "difficulty": "facile"
+  },
+  {
+    "id": "PY101-Q2",
+    "course_id": "PY101",
+    "question": "Quelle instruction importe la bibliothèque pandas avec l'alias pd ?",
+    "choices": [
+      "import pandas as pd",
+      "import pd from pandas",
+      "from pandas import pd",
+      "using pandas as pd"
+    ],
+    "answer_index": 0,
+    "explanation": "La convention est import pandas as pd.",
+    "difficulty": "facile"
+  },
+  {
+    "id": "PY101-Q3",
+    "course_id": "PY101",
+    "question": "Que fait df.head() ?",
+    "choices": [
+      "Supprime les doublons",
+      "Affiche les premières lignes",
+      "Trie le tableau",
+      "Calcule la moyenne"
+    ],
+    "answer_index": 1,
+    "explanation": "head() affiche par défaut les 5 premières lignes.",
+    "difficulty": "facile"
+  },
+  {
+    "id": "PY101-Q4",
+    "course_id": "PY101",
+    "question": "Quelle méthode calcule la moyenne d'une colonne numérique ?",
+    "choices": [
+      "df.mean()",
+      "df.count()",
+      "df.max()",
+      "df.dtypes"
+    ],
+    "answer_index": 0,
+    "explanation": "mean() calcule la moyenne des colonnes numériques.",
+    "difficulty": "moyen"
+  },
+  {
+    "id": "PY101-Q5",
+    "course_id": "PY101",
+    "question": "Comment remplacer les valeurs manquantes d'une colonne par 0 ?",
+    "choices": [
+      "df.fillna(0)",
+      "df.dropna(0)",
+      "df.replace(0)",
+      "df.isna(0)"
+    ],
+    "answer_index": 0,
+    "explanation": "fillna(0) remplace les NaN par 0.",
+    "difficulty": "moyen"
+  },
+  {
+    "id": "SQL201-Q1",
+    "course_id": "SQL201",
+    "question": "Quelle clause filtre les lignes avant regroupement ?",
+    "choices": [
+      "HAVING",
+      "WHERE",
+      "ORDER BY",
+      "GROUP BY"
+    ],
+    "answer_index": 1,
+    "explanation": "WHERE filtre les lignes ; HAVING filtre les groupes.",
+    "difficulty": "facile"
+  },
+  {
+    "id": "SQL201-Q2",
+    "course_id": "SQL201",
+    "question": "Quelle fonction compte le nombre de lignes d'un groupe ?",
+    "choices": [
+      "SUM()",
+      "COUNT()",
+      "AVG()",
+      "MAX()"
+    ],
+    "answer_index": 1,
+    "explanation": "COUNT() compte les lignes.",
+    "difficulty": "facile"
+  },
+  {
+    "id": "SQL201-Q3",
+    "course_id": "SQL201",
+    "question": "Quelle jointure conserve toutes les lignes de la table de gauche ?",
+    "choices": [
+      "INNER JOIN",
+      "LEFT JOIN",
+      "CROSS JOIN",
+      "SELF JOIN"
+    ],
+    "answer_index": 1,
+    "explanation": "LEFT JOIN conserve la table de gauche.",
+    "difficulty": "moyen"
+  },
+  {
+    "id": "SQL201-Q4",
+    "course_id": "SQL201",
+    "question": "Quelle clause s'utilise avec les agrégats pour filtrer les groupes ?",
+    "choices": [
+      "WHERE",
+      "HAVING",
+      "LIMIT",
+      "DISTINCT"
+    ],
+    "answer_index": 1,
+    "explanation": "HAVING filtre après GROUP BY.",
+    "difficulty": "moyen"
+  },
+  {
+    "id": "SQL201-Q5",
+    "course_id": "SQL201",
+    "question": "Que fait DISTINCT dans un SELECT ?",
+    "choices": [
+      "Trie les résultats",
+      "Supprime les doublons",
+      "Limite à 10 lignes",
+      "Crée un index"
+    ],
+    "answer_index": 1,
+    "explanation": "DISTINCT renvoie des lignes uniques.",
+    "difficulty": "facile"
+  },
+  {
+    "id": "STAT210-Q1",
+    "course_id": "STAT210",
+    "question": "Que mesure l'écart-type ?",
+    "choices": [
+      "La valeur centrale",
+      "La dispersion autour de la moyenne",
+      "Le nombre d'observations",
+      "La corrélation"
+    ],
+    "answer_index": 1,
+    "explanation": "L'écart-type mesure la dispersion.",
+    "difficulty": "facile"
+  },
+  {
+    "id": "STAT210-Q2",
+    "course_id": "STAT210",
+    "question": "Dans un test d'hypothèse, que signifie p < 0,05 ?",
+    "choices": [
+      "L'hypothèse nulle est prouvée",
+      "Le résultat est statistiquement significatif au seuil 5 %",
+      "La variable est normale",
+      "L'échantillon est trop grand"
+    ],
+    "answer_index": 1,
+    "explanation": "p < 0,05 conduit à rejeter H0 au seuil 5 %.",
+    "difficulty": "moyen"
+  },
+  {
+    "id": "STAT210-Q3",
+    "course_id": "STAT210",
+    "question": "Quelle mesure est sensible aux valeurs extrêmes ?",
+    "choices": [
+      "La médiane",
+      "La moyenne",
+      "Le mode",
+      "L'écart interquartile"
+    ],
+    "answer_index": 1,
+    "explanation": "La moyenne est tirée par les valeurs extrêmes.",
+    "difficulty": "moyen"
+  },
+  {
+    "id": "STAT210-Q4",
+    "course_id": "STAT210",
+    "question": "Un intervalle de confiance à 95 % signifie que…",
+    "choices": [
+      "95 % des données sont dans l'intervalle",
+      "La méthode capture le vrai paramètre dans 95 % des échantillonnages",
+      "Le résultat est vrai à 95 %",
+      "Il n'y a pas d'incertitude"
+    ],
+    "answer_index": 1,
+    "explanation": "C'est une propriété de la procédure sur le long terme.",
+    "difficulty": "difficile"
+  },
+  {
+    "id": "STAT210-Q5",
+    "course_id": "STAT210",
+    "question": "Quel test compare les moyennes de deux groupes indépendants ?",
+    "choices": [
+      "Test du chi²",
+      "Test t de Student",
+      "ANOVA à un facteur",
+      "Régression logistique"
+    ],
+    "answer_index": 1,
+    "explanation": "Le test t compare deux moyennes indépendantes.",
+    "difficulty": "moyen"
+  },
+  {
+    "id": "VIZ220-Q1",
+    "course_id": "VIZ220",
+    "question": "Quel graphique montre l'évolution d'une valeur dans le temps ?",
+    "choices": [
+      "Diagramme en secteurs",
+      "Courbe",
+      "Nuage de points",
+      "Treemap"
+    ],
+    "answer_index": 1,
+    "explanation": "La courbe est adaptée aux séries temporelles.",
+    "difficulty": "facile"
+  },
+  {
+    "id": "VIZ220-Q2",
+    "course_id": "VIZ220",
+    "question": "Quel encodage visuel est le plus précis pour comparer des catégories ?",
+    "choices": [
+      "La couleur",
+      "La longueur d'une barre",
+      "La surface",
+      "L'angle"
+    ],
+    "answer_index": 1,
+    "explanation": "La longueur est plus précise que la surface ou l'angle.",
+    "difficulty": "moyen"
+  },
+  {
+    "id": "VIZ220-Q3",
+    "course_id": "VIZ220",
+    "question": "Que faut-il éviter dans un tableau de bord ?",
+    "choices": [
+      "Un titre clair",
+      "Trop de couleurs et d'indicateurs",
+      "Une source de données",
+      "Un filtre de période"
+    ],
+    "answer_index": 1,
+    "explanation": "La surcharge visuelle nuit à la lecture.",
+    "difficulty": "facile"
+  },
+  {
+    "id": "VIZ220-Q4",
+    "course_id": "VIZ220",
+    "question": "Quel graphique est adapté à une distribution de scores ?",
+    "choices": [
+      "Histogramme",
+      "Diagramme circulaire",
+      "Carte",
+      "Jauge"
+    ],
+    "answer_index": 0,
+    "explanation": "L'histogramme montre la distribution.",
+    "difficulty": "moyen"
+  },
+  {
+    "id": "VIZ220-Q5",
+    "course_id": "VIZ220",
+    "question": "Pourquoi ajouter une ligne de référence sur un graphique ?",
+    "choices": [
+      "Décorer",
+      "Situer les valeurs par rapport à un seuil",
+      "Masquer les données",
+      "Remplacer la légende"
+    ],
+    "answer_index": 1,
+    "explanation": "La référence donne du sens aux valeurs.",
+    "difficulty": "moyen"
+  },
+  {
+    "id": "ML301-Q1",
+    "course_id": "ML301",
+    "question": "Quel est le risque d'un modèle qui apprend par cœur les données d'entraînement ?",
+    "choices": [
+      "Le sous-apprentissage",
+      "Le sur-apprentissage",
+      "La multicolinéarité",
+      "Le biais de sélection"
+    ],
+    "answer_index": 1,
+    "explanation": "C'est le sur-apprentissage (overfitting).",
+    "difficulty": "facile"
+  },
+  {
+    "id": "ML301-Q2",
+    "course_id": "ML301",
+    "question": "À quoi sert un jeu de validation ?",
+    "choices": [
+      "À entraîner le modèle",
+      "À choisir les hyperparamètres",
+      "À déployer le modèle",
+      "À collecter les données"
+    ],
+    "answer_index": 1,
+    "explanation": "La validation sert à régler les hyperparamètres.",
+    "difficulty": "moyen"
+  },
+  {
+    "id": "ML301-Q3",
+    "course_id": "ML301",
+    "question": "Quelle métrique est adaptée à un problème très déséquilibré ?",
+    "choices": [
+      "Accuracy",
+      "F1-score",
+      "MSE",
+      "R²"
+    ],
+    "answer_index": 1,
+    "explanation": "Le F1-score équilibre précision et rappel.",
+    "difficulty": "moyen"
+  },
+  {
+    "id": "ML301-Q4",
+    "course_id": "ML301",
+    "question": "Que fait une validation croisée k-fold ?",
+    "choices": [
+      "Elle découpe les données en k plis pour évaluer la robustesse",
+      "Elle supprime k lignes",
+      "Elle crée k modèles en production",
+      "Elle normalise les données"
+    ],
+    "answer_index": 0,
+    "explanation": "Chaque pli sert une fois de validation.",
+    "difficulty": "difficile"
+  },
+  {
+    "id": "ML301-Q5",
+    "course_id": "ML301",
+    "question": "Quelle tâche prédit une catégorie ?",
+    "choices": [
+      "La régression",
+      "La classification",
+      "Le clustering",
+      "La réduction de dimension"
+    ],
+    "answer_index": 1,
+    "explanation": "La classification prédit une classe.",
+    "difficulty": "facile"
+  },
+  {
+    "id": "GEN130-Q1",
+    "course_id": "GEN130",
+    "question": "Quel est le principal risque d'un LLM utilisé sans vérification ?",
+    "choices": [
+      "Une réponse trop courte",
+      "Une hallucination présentée comme un fait",
+      "Un temps de réponse long",
+      "Une interface peu ergonomique"
+    ],
+    "answer_index": 1,
+    "explanation": "Le LLM peut inventer des faits de façon convaincante.",
+    "difficulty": "facile"
+  },
+  {
+    "id": "GEN130-Q2",
+    "course_id": "GEN130",
+    "question": "Que faut-il fournir dans un prompt pour améliorer la fiabilité ?",
+    "choices": [
+      "Le contexte, la tâche et le format attendu",
+      "Uniquement une question vague",
+      "Le nom du modèle",
+      "Une émotion"
+    ],
+    "answer_index": 0,
+    "explanation": "Contexte + tâche + format = prompt cadré.",
+    "difficulty": "facile"
+  },
+  {
+    "id": "GEN130-Q3",
+    "course_id": "GEN130",
+    "question": "Pourquoi citer ses sources dans une réponse générée ?",
+    "choices": [
+      "Pour allonger la réponse",
+      "Pour permettre la vérification",
+      "Pour éviter le coût",
+      "Pour changer de modèle"
+    ],
+    "answer_index": 1,
+    "explanation": "La citation rend la réponse vérifiable.",
+    "difficulty": "moyen"
+  },
+  {
+    "id": "GEN130-Q4",
+    "course_id": "GEN130",
+    "question": "Qu'est-ce qu'un prompt système ?",
+    "choices": [
+      "Une instruction qui cadre le comportement de l'assistant",
+      "Un fichier de données",
+      "Un modèle de langage",
+      "Une clé API"
+    ],
+    "answer_index": 0,
+    "explanation": "Le prompt système définit le rôle et les règles.",
+    "difficulty": "moyen"
+  },
+  {
+    "id": "GEN130-Q5",
+    "course_id": "GEN130",
+    "question": "Quelle pratique réduit le mieux les biais de confirmation ?",
+    "choices": [
+      "Demander plusieurs sources et contre-hypothèses",
+      "Accepter la première réponse",
+      "Utiliser un seul exemple",
+      "Augmenter la température"
+    ],
+    "answer_index": 0,
+    "explanation": "La confrontation de sources limite le biais.",
+    "difficulty": "difficile"
+  }
+]

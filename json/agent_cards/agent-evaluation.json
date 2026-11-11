@@ -1,0 +1,73 @@
+{
+  "protocolVersion": "0.3.0",
+  "preferredTransport": "JSONRPC",
+  "additionalInterfaces": [
+    {
+      "url": "http://127.0.0.1:8102/",
+      "transport": "JSONRPC"
+    }
+  ],
+  "provider": {
+    "organization": "EduAgentic · Centre des Très Petites Entreprises Solidaires / DBA Technology",
+    "url": "http://localhost:8011"
+  },
+  "version": "1.0.0",
+  "documentationUrl": "http://localhost:8011",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": true
+  },
+  "defaultInputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "url": "http://127.0.0.1:8102/",
+  "iconUrl": "http://localhost:8011/assets/logo.png",
+  "name": "Agent Évaluation",
+  "description": "Génère des quiz formatifs, corrige les réponses et produit un feedback de remédiation.",
+  "skills": [
+    {
+      "id": "generate_quiz",
+      "name": "Génération de quiz",
+      "description": "Crée un quiz à partir de la banque de questions du cours.",
+      "tags": [
+        "quiz",
+        "évaluation",
+        "formative"
+      ],
+      "examples": [
+        "Génère 3 questions sur Python"
+      ],
+      "inputModes": [
+        "application/json"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    },
+    {
+      "id": "grade_quiz",
+      "name": "Correction et feedback",
+      "description": "Calcule le score, montre les corrections et propose une remédiation.",
+      "tags": [
+        "score",
+        "feedback",
+        "remédiation"
+      ],
+      "examples": [
+        "Corrige mes réponses au quiz PY101"
+      ],
+      "inputModes": [
+        "application/json"
+      ],
+      "outputModes": [
+        "application/json"
+      ]
+    }
+  ]
+}

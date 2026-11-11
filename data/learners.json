@@ -1,0 +1,416 @@
+[
+  {
+    "id": "L001",
+    "name": "Lina Benali",
+    "level": "Bac+2",
+    "cohort": "Cohorte Data 2026",
+    "goal": "Devenir Data Analyst",
+    "target_skill": "data-analysis",
+    "completed_courses": [
+      "PY101",
+      "SQL201"
+    ],
+    "quiz_average": 82,
+    "progress_pct": 68,
+    "engagement": "Élevé",
+    "joined": "2026-09-15",
+    "status": "Actif"
+  },
+  {
+    "id": "L002",
+    "name": "Omar El Idrissi",
+    "level": "Bac+3",
+    "cohort": "Cohorte Data 2026",
+    "goal": "Data Scientist",
+    "target_skill": "machine-learning",
+    "completed_courses": [
+      "PY101",
+      "SQL201",
+      "STAT210"
+    ],
+    "quiz_average": 76,
+    "progress_pct": 54,
+    "engagement": "Moyen",
+    "joined": "2026-09-15",
+    "status": "Actif"
+  },
+  {
+    "id": "L003",
+    "name": "Sara Amrani",
+    "level": "Bac+5",
+    "cohort": "Cohorte IA 2026",
+    "goal": "Ingénieure IA",
+    "target_skill": "deep-learning",
+    "completed_courses": [
+      "PY101",
+      "STAT210",
+      "ML301"
+    ],
+    "quiz_average": 88,
+    "progress_pct": 72,
+    "engagement": "Élevé",
+    "joined": "2026-09-15",
+    "status": "Actif"
+  },
+  {
+    "id": "L004",
+    "name": "Youssef Berrada",
+    "level": "Bac+3",
+    "cohort": "Cohorte Data 2026",
+    "goal": "Analyste BI",
+    "target_skill": "visualization",
+    "completed_courses": [
+      "SQL201",
+      "VIZ220"
+    ],
+    "quiz_average": 71,
+    "progress_pct": 61,
+    "engagement": "Moyen",
+    "joined": "2026-09-15",
+    "status": "Actif"
+  },
+  {
+    "id": "L005",
+    "name": "Imane Chraibi",
+    "level": "Bac+2",
+    "cohort": "Cohorte Reconversion",
+    "goal": "Data Analyst",
+    "target_skill": "data-analysis",
+    "completed_courses": [
+      "PY101"
+    ],
+    "quiz_average": 64,
+    "progress_pct": 35,
+    "engagement": "Faible",
+    "joined": "2026-09-15",
+    "status": "Actif"
+  },
+  {
+    "id": "L006",
+    "name": "Karim Alaoui",
+    "level": "Bac+5",
+    "cohort": "Cohorte IA 2026",
+    "goal": "ML Engineer",
+    "target_skill": "mlops",
+    "completed_courses": [
+      "PY101",
+      "STAT210",
+      "ML301"
+    ],
+    "quiz_average": 84,
+    "progress_pct": 70,
+    "engagement": "Élevé",
+    "joined": "2026-09-15",
+    "status": "Actif"
+  },
+  {
+    "id": "L007",
+    "name": "Nadia Fassi",
+    "level": "Formation continue",
+    "cohort": "Cohorte Enseignants",
+    "goal": "Enseignante augmentée par l'IA",
+    "target_skill": "pedagogy",
+    "completed_courses": [
+      "PEDA120",
+      "GEN130"
+    ],
+    "quiz_average": 79,
+    "progress_pct": 66,
+    "engagement": "Élevé",
+    "joined": "2026-09-15",
+    "status": "Actif"
+  },
+  {
+    "id": "L008",
+    "name": "Hamza Tazi",
+    "level": "Bac+3",
+    "cohort": "Cohorte Data 2026",
+    "goal": "Data Engineer",
+    "target_skill": "data-engineering",
+    "completed_courses": [
+      "SQL201",
+      "CLOUD230"
+    ],
+    "quiz_average": 73,
+    "progress_pct": 58,
+    "engagement": "Moyen",
+    "joined": "2026-09-15",
+    "status": "Actif"
+  },
+  {
+    "id": "L009",
+    "name": "Salima Mansouri",
+    "level": "Bac+5",
+    "cohort": "Cohorte IA 2026",
+    "goal": "Responsable éthique IA",
+    "target_skill": "ethics",
+    "completed_courses": [
+      "ETH240",
+      "GEN130"
+    ],
+    "quiz_average": 90,
+    "progress_pct": 80,
+    "engagement": "Élevé",
+    "joined": "2026-09-15",
+    "status": "Actif"
+  },
+  {
+    "id": "L010",
+    "name": "Rachid Boulahcen",
+    "level": "Bac+2",
+    "cohort": "Cohorte Reconversion",
+    "goal": "Technicien data",
+    "target_skill": "sql",
+    "completed_courses": [
+      "SQL201"
+    ],
+    "quiz_average": 58,
+    "progress_pct": 22,
+    "engagement": "Faible",
+    "joined": "2026-09-15",
+    "status": "Actif"
+  },
+  {
+    "id": "L011",
+    "name": "Aya El Fassi",
+    "level": "Bac+3",
+    "cohort": "Cohorte Data 2026",
+    "goal": "Data Analyst",
+    "target_skill": "data-analysis",
+    "completed_courses": [
+      "PY101",
+      "SQL201",
+      "STAT210"
+    ],
+    "quiz_average": 81,
+    "progress_pct": 64,
+    "engagement": "Moyen",
+    "joined": "2026-09-15",
+    "status": "Actif"
+  },
+  {
+    "id": "L012",
+    "name": "Mehdi Ouazzani",
+    "level": "Bac+5",
+    "cohort": "Cohorte IA 2026",
+    "goal": "NLP Engineer",
+    "target_skill": "nlp",
+    "completed_courses": [
+      "PY101",
+      "STAT210",
+      "ML301",
+      "NLP310"
+    ],
+    "quiz_average": 86,
+    "progress_pct": 74,
+    "engagement": "Élevé",
+    "joined": "2026-09-15",
+    "status": "Actif"
+  },
+  {
+    "id": "L013",
+    "name": "Sofia Lahlou",
+    "level": "Bac+3",
+    "cohort": "Cohorte Enseignants",
+    "goal": "Conceptrice pédagogique",
+    "target_skill": "instructional-design",
+    "completed_courses": [
+      "PEDA120",
+      "UX110"
+    ],
+    "quiz_average": 77,
+    "progress_pct": 63,
+    "engagement": "Moyen",
+    "joined": "2026-09-15",
+    "status": "Actif"
+  },
+  {
+    "id": "L014",
+    "name": "Adam Benjelloun",
+    "level": "Bac+2",
+    "cohort": "Cohorte Reconversion",
+    "goal": "Data Analyst junior",
+    "target_skill": "data-analysis",
+    "completed_courses": [
+      "PY101",
+      "SQL201"
+    ],
+    "quiz_average": 69,
+    "progress_pct": 44,
+    "engagement": "Moyen",
+    "joined": "2026-09-15",
+    "status": "Actif"
+  },
+  {
+    "id": "L015",
+    "name": "Rim Cherkaoui",
+    "level": "Bac+5",
+    "cohort": "Cohorte IA 2026",
+    "goal": "AI Product Manager",
+    "target_skill": "machine-learning",
+    "completed_courses": [
+      "PY101",
+      "STAT210",
+      "ETH240"
+    ],
+    "quiz_average": 83,
+    "progress_pct": 67,
+    "engagement": "Élevé",
+    "joined": "2026-09-15",
+    "status": "Actif"
+  },
+  {
+    "id": "L016",
+    "name": "Anas Sefrioui",
+    "level": "Bac+3",
+    "cohort": "Cohorte Data 2026",
+    "goal": "Analyste produit",
+    "target_skill": "visualization",
+    "completed_courses": [
+      "SQL201"
+    ],
+    "quiz_average": 66,
+    "progress_pct": 39,
+    "engagement": "Faible",
+    "joined": "2026-09-15",
+    "status": "Actif"
+  },
+  {
+    "id": "L017",
+    "name": "Hajar El Amrani",
+    "level": "Bac+5",
+    "cohort": "Cohorte Enseignants",
+    "goal": "Directrice pédagogique",
+    "target_skill": "pedagogy",
+    "completed_courses": [
+      "PEDA120",
+      "ETH240"
+    ],
+    "quiz_average": 88,
+    "progress_pct": 76,
+    "engagement": "Élevé",
+    "joined": "2026-09-15",
+    "status": "Actif"
+  },
+  {
+    "id": "L018",
+    "name": "Bilal Ziani",
+    "level": "Bac+2",
+    "cohort": "Cohorte Reconversion",
+    "goal": "Support data",
+    "target_skill": "sql",
+    "completed_courses": [
+      "SQL201"
+    ],
+    "quiz_average": 61,
+    "progress_pct": 31,
+    "engagement": "Moyen",
+    "joined": "2026-09-15",
+    "status": "Actif"
+  },
+  {
+    "id": "L019",
+    "name": "Meryem Naciri",
+    "level": "Bac+3",
+    "cohort": "Cohorte Data 2026",
+    "goal": "Data Analyst",
+    "target_skill": "data-analysis",
+    "completed_courses": [
+      "PY101",
+      "STAT210"
+    ],
+    "quiz_average": 74,
+    "progress_pct": 57,
+    "engagement": "Moyen",
+    "joined": "2026-09-15",
+    "status": "Actif"
+  },
+  {
+    "id": "L020",
+    "name": "Yassine Kabbaj",
+    "level": "Bac+5",
+    "cohort": "Cohorte IA 2026",
+    "goal": "MLOps Engineer",
+    "target_skill": "mlops",
+    "completed_courses": [
+      "PY101",
+      "ML301",
+      "MLO330"
+    ],
+    "quiz_average": 87,
+    "progress_pct": 78,
+    "engagement": "Élevé",
+    "joined": "2026-09-15",
+    "status": "Actif"
+  },
+  {
+    "id": "L021",
+    "name": "Kenza Bouzid",
+    "level": "Bac+3",
+    "cohort": "Cohorte Enseignants",
+    "goal": "Formatrice numérique",
+    "target_skill": "pedagogy",
+    "completed_courses": [
+      "PEDA120",
+      "GEN130"
+    ],
+    "quiz_average": 80,
+    "progress_pct": 69,
+    "engagement": "Élevé",
+    "joined": "2026-09-15",
+    "status": "Actif"
+  },
+  {
+    "id": "L022",
+    "name": "Sami Regragui",
+    "level": "Bac+2",
+    "cohort": "Cohorte Reconversion",
+    "goal": "Assistant BI",
+    "target_skill": "visualization",
+    "completed_courses": [
+      "SQL201",
+      "VIZ220"
+    ],
+    "quiz_average": 68,
+    "progress_pct": 48,
+    "engagement": "Moyen",
+    "joined": "2026-09-15",
+    "status": "Actif"
+  },
+  {
+    "id": "L023",
+    "name": "Laila Haddad",
+    "level": "Bac+5",
+    "cohort": "Cohorte IA 2026",
+    "goal": "Chercheuse en IA éducative",
+    "target_skill": "nlp",
+    "completed_courses": [
+      "PY101",
+      "STAT210",
+      "ML301"
+    ],
+    "quiz_average": 91,
+    "progress_pct": 82,
+    "engagement": "Élevé",
+    "joined": "2026-09-15",
+    "status": "Actif"
+  },
+  {
+    "id": "L024",
+    "name": "Nabil Tahiri",
+    "level": "Bac+3",
+    "cohort": "Cohorte Data 2026",
+    "goal": "Data Analyst",
+    "target_skill": "data-analysis",
+    "completed_courses": [
+      "PY101",
+      "SQL201",
+      "VIZ220"
+    ],
+    "quiz_average": 78,
+    "progress_pct": 62,
+    "engagement": "Moyen",
+    "joined": "2026-09-15",
+    "status": "Actif"
+  }
+]

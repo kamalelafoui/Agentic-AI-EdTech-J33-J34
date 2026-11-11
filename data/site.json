@@ -1,0 +1,15 @@
+{
+  "title": "Agentic AI in Education Technology (EdTech)",
+  "subtitle": "MCP & A2A — deux mini-projets",
+  "author": "Kamal El Afoui",
+  "program": "Centre des Très Petites Entreprises Solidaires · DBA Technology",
+  "days": "Jours 33 & 34",
+  "date": "11 novembre 2026",
+  "version": "1.0.0 — Correction finale",
+  "dashboard_port": 8011,
+  "mcp_port": 8000,
+  "a2a_orchestrator_port": 8001,
+  "mcp_url": "http://127.0.0.1:8000/sse",
+  "a2a_url": "http://127.0.0.1:8001",
+  "license": "MIT — données synthétiques"
+}

@@ -1,0 +1,374 @@
+[
+  {
+    "id": "PY101",
+    "title": "Python pour l'analyse de données",
+    "description": "Fondamentaux de Python, pandas et notebooks pour manipuler des données pédagogiques.",
+    "provider": "EduLabs",
+    "level": "Débutant",
+    "duration_h": 20,
+    "skills": [
+      "python",
+      "data-analysis"
+    ],
+    "prerequisites": [],
+    "rating": 4.7,
+    "enrolled": 1840,
+    "completion_rate": 78,
+    "modules": 8,
+    "language": "Français",
+    "certificate": true,
+    "tags": [
+      "python",
+      "pandas",
+      "notebook",
+      "débutant"
+    ]
+  },
+  {
+    "id": "SQL201",
+    "title": "SQL et bases de données éducatives",
+    "description": "Interroger, nettoyer et agréger les données d'apprentissage avec SQL.",
+    "provider": "DataSchool",
+    "level": "Débutant",
+    "duration_h": 18,
+    "skills": [
+      "sql",
+      "data-analysis"
+    ],
+    "prerequisites": [],
+    "rating": 4.6,
+    "enrolled": 1620,
+    "completion_rate": 74,
+    "modules": 7,
+    "language": "Français",
+    "certificate": true,
+    "tags": [
+      "sql",
+      "requêtes",
+      "base de données",
+      "débutant"
+    ]
+  },
+  {
+    "id": "STAT210",
+    "title": "Statistiques appliquées à l'éducation",
+    "description": "Décrire, tester et interpréter les résultats d'apprentissage avec confiance.",
+    "provider": "EduLabs",
+    "level": "Intermédiaire",
+    "duration_h": 24,
+    "skills": [
+      "statistics",
+      "data-analysis"
+    ],
+    "prerequisites": [
+      "PY101"
+    ],
+    "rating": 4.8,
+    "enrolled": 980,
+    "completion_rate": 69,
+    "modules": 9,
+    "language": "Français",
+    "certificate": true,
+    "tags": [
+      "statistiques",
+      "A/B test",
+      "inférence",
+      "moyen"
+    ]
+  },
+  {
+    "id": "VIZ220",
+    "title": "Visualisation de données avec Power BI",
+    "description": "Construire des tableaux de bord clairs pour les équipes pédagogiques.",
+    "provider": "DataSchool",
+    "level": "Intermédiaire",
+    "duration_h": 16,
+    "skills": [
+      "visualization",
+      "data-analysis"
+    ],
+    "prerequisites": [
+      "SQL201"
+    ],
+    "rating": 4.7,
+    "enrolled": 1210,
+    "completion_rate": 81,
+    "modules": 6,
+    "language": "Français",
+    "certificate": true,
+    "tags": [
+      "power bi",
+      "dashboard",
+      "dataviz",
+      "moyen"
+    ]
+  },
+  {
+    "id": "ML301",
+    "title": "Machine Learning : fondamentaux",
+    "description": "Régression, classification et évaluation de modèles avec scikit-learn.",
+    "provider": "AI Academy",
+    "level": "Avancé",
+    "duration_h": 32,
+    "skills": [
+      "machine-learning",
+      "python"
+    ],
+    "prerequisites": [
+      "PY101",
+      "STAT210"
+    ],
+    "rating": 4.8,
+    "enrolled": 760,
+    "completion_rate": 62,
+    "modules": 11,
+    "language": "Français",
+    "certificate": true,
+    "tags": [
+      "machine learning",
+      "scikit-learn",
+      "modèles",
+      "avancé"
+    ]
+  },
+  {
+    "id": "NLP310",
+    "title": "NLP et IA générative",
+    "description": "Traitement du langage, embeddings et agents conversationnels responsables.",
+    "provider": "AI Academy",
+    "level": "Avancé",
+    "duration_h": 28,
+    "skills": [
+      "nlp",
+      "machine-learning"
+    ],
+    "prerequisites": [
+      "ML301"
+    ],
+    "rating": 4.9,
+    "enrolled": 640,
+    "completion_rate": 58,
+    "modules": 10,
+    "language": "Français",
+    "certificate": true,
+    "tags": [
+      "nlp",
+      "llm",
+      "rag",
+      "agents",
+      "avancé"
+    ]
+  },
+  {
+    "id": "DL320",
+    "title": "Deep Learning et réseaux de neurones",
+    "description": "Perceptrons, CNN, transformers et entraînement sur GPU.",
+    "provider": "AI Academy",
+    "level": "Avancé",
+    "duration_h": 36,
+    "skills": [
+      "deep-learning",
+      "machine-learning"
+    ],
+    "prerequisites": [
+      "ML301"
+    ],
+    "rating": 4.7,
+    "enrolled": 420,
+    "completion_rate": 54,
+    "modules": 12,
+    "language": "Français",
+    "certificate": true,
+    "tags": [
+      "deep learning",
+      "pytorch",
+      "transformers",
+      "avancé"
+    ]
+  },
+  {
+    "id": "MLO330",
+    "title": "MLOps et déploiement de modèles",
+    "description": "Industrialiser, surveiller et versionner des modèles en production.",
+    "provider": "CloudCampus",
+    "level": "Avancé",
+    "duration_h": 24,
+    "skills": [
+      "mlops",
+      "cloud"
+    ],
+    "prerequisites": [
+      "ML301"
+    ],
+    "rating": 4.6,
+    "enrolled": 380,
+    "completion_rate": 60,
+    "modules": 8,
+    "language": "Français",
+    "certificate": true,
+    "tags": [
+      "mlops",
+      "docker",
+      "ci/cd",
+      "cloud",
+      "avancé"
+    ]
+  },
+  {
+    "id": "ETH240",
+    "title": "Éthique et gouvernance de l'IA",
+    "description": "Biais, transparence, RGPD et cadre de confiance pour l'IA éducative.",
+    "provider": "Open Ethics",
+    "level": "Intermédiaire",
+    "duration_h": 12,
+    "skills": [
+      "ethics",
+      "governance"
+    ],
+    "prerequisites": [],
+    "rating": 4.9,
+    "enrolled": 1450,
+    "completion_rate": 86,
+    "modules": 5,
+    "language": "Français",
+    "certificate": true,
+    "tags": [
+      "éthique",
+      "biais",
+      "rgpd",
+      "gouvernance",
+      "moyen"
+    ]
+  },
+  {
+    "id": "UX110",
+    "title": "UX/UI pour produits éducatifs",
+    "description": "Concevoir des parcours d'apprentissage accessibles et engageants.",
+    "provider": "DesignLab",
+    "level": "Débutant",
+    "duration_h": 14,
+    "skills": [
+      "ux",
+      "design"
+    ],
+    "prerequisites": [],
+    "rating": 4.5,
+    "enrolled": 890,
+    "completion_rate": 77,
+    "modules": 6,
+    "language": "Français",
+    "certificate": true,
+    "tags": [
+      "ux",
+      "ui",
+      "accessibilité",
+      "débutant"
+    ]
+  },
+  {
+    "id": "PEDA120",
+    "title": "Ingénierie pédagogique augmentée par l'IA",
+    "description": "Concevoir des séquences, évaluations et feedbacks assistés par l'IA.",
+    "provider": "TeachForward",
+    "level": "Intermédiaire",
+    "duration_h": 18,
+    "skills": [
+      "pedagogy",
+      "instructional-design"
+    ],
+    "prerequisites": [],
+    "rating": 4.8,
+    "enrolled": 1120,
+    "completion_rate": 83,
+    "modules": 7,
+    "language": "Français",
+    "certificate": true,
+    "tags": [
+      "pédagogie",
+      "assessment",
+      "feedback",
+      "enseignants"
+    ]
+  },
+  {
+    "id": "DATA350",
+    "title": "Projet capstone Data Analyst",
+    "description": "Un projet de bout en bout : question, données, analyse, visualisation et restitution.",
+    "provider": "DataSchool",
+    "level": "Avancé",
+    "duration_h": 40,
+    "skills": [
+      "data-analysis",
+      "portfolio",
+      "visualization"
+    ],
+    "prerequisites": [
+      "STAT210",
+      "VIZ220"
+    ],
+    "rating": 4.9,
+    "enrolled": 310,
+    "completion_rate": 72,
+    "modules": 5,
+    "language": "Français",
+    "certificate": true,
+    "tags": [
+      "capstone",
+      "portfolio",
+      "projet",
+      "data analyst"
+    ]
+  },
+  {
+    "id": "GEN130",
+    "title": "Prompt engineering et usage responsable des LLM",
+    "description": "Écrire des prompts fiables, vérifier les sources et cadrer les usages.",
+    "provider": "AI Academy",
+    "level": "Débutant",
+    "duration_h": 10,
+    "skills": [
+      "prompting",
+      "ethics"
+    ],
+    "prerequisites": [],
+    "rating": 4.6,
+    "enrolled": 2100,
+    "completion_rate": 88,
+    "modules": 4,
+    "language": "Français",
+    "certificate": true,
+    "tags": [
+      "prompt",
+      "llm",
+      "fiabilité",
+      "débutant"
+    ]
+  },
+  {
+    "id": "CLOUD230",
+    "title": "Cloud et data engineering pour l'éducation",
+    "description": "Pipelines, stockage et orchestration de données multi-établissements.",
+    "provider": "CloudCampus",
+    "level": "Intermédiaire",
+    "duration_h": 26,
+    "skills": [
+      "cloud",
+      "data-engineering"
+    ],
+    "prerequisites": [
+      "SQL201"
+    ],
+    "rating": 4.5,
+    "enrolled": 520,
+    "completion_rate": 65,
+    "modules": 9,
+    "language": "Français",
+    "certificate": true,
+    "tags": [
+      "cloud",
+      "etl",
+      "pipeline",
+      "moyen"
+    ]
+  }
+]
