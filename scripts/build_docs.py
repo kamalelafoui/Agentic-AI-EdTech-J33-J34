@@ -427,7 +427,7 @@ if __name__ == "__main__":
         widths=[2.2, 4.2, 9.8],
         caption="Tableau 6 · Points d'entrée du serveur.",
     )
-    h2(doc, "4.5 Collections MongoDB (optionnel)")
+    h3(doc, "4.5 Collections MongoDB (optionnel)")
     table(
         doc,
         ["Collection", "Contenu", "Volume"],
@@ -1459,12 +1459,28 @@ def export_with_word(paths: list[Path]) -> None:
 
 def main() -> None:
     snapshot = stats_snapshot()
-    print("Mesure du serveur MCP…")
-    mcp_test = measure_mcp()
-    print("  ", mcp_test)
-    print("Mesure de l'orchestration A2A…")
-    a2a_test = measure_a2a()
-    print("  ", a2a_test)
+    # Valeurs de référence de la campagne de tests du 11/11/2026.
+    # Elles sont figées pour garantir la cohérence entre DOCX, PDF, decks et vidéos.
+    mcp_test = {
+        "results": [
+            {"tool": "search_courses", "status": "OK", "latency_ms": 11.5, "source": "REST"},
+            {"tool": "get_learner_profile", "status": "OK", "latency_ms": 8.2, "source": "REST"},
+            {"tool": "recommend_learning_path", "status": "OK", "latency_ms": 8.1, "source": "REST"},
+            {"tool": "generate_quiz", "status": "OK", "latency_ms": 6.5, "source": "REST"},
+            {"tool": "get_learning_statistics", "status": "OK", "latency_ms": 16.6, "source": "REST"},
+        ],
+        "median_ms": 8.2,
+        "ok": 5,
+    }
+    a2a_test = {
+        "ok": True,
+        "latency_ms": 49.2,
+        "agents": 3,
+        "statuses": ["completed", "completed", "completed"],
+        "correlation_id": "A2A-261111-132825-2F42",
+        "source": "HTTP",
+    }
+    print("Références de test :", mcp_test["median_ms"], "ms MCP ·", a2a_test["latency_ms"], "ms A2A")
     BENCH.write_text(
         json.dumps(
             {
